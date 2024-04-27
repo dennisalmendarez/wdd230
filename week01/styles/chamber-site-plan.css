@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Tenor+Sans&display=swap');
+
+:root {
+  --primary-color: #0081A7;
+  --secondary-color: #7FCDC2;
+  --accent1-color: #FEEBCA;
+  --accent2-color: #F07167;
+  --accent3-color: #FED9B7;
+  --heading-font: "Crimson Text";
+  --paragraph-font: Tenor Sans, serif, Helvetica;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--accent2-color);
+  background-color: var(--primary-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: #1F97A6;
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 20%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+.accent3 {
+  background-color: var(--accent3-color);
+}
+
+p.colored {
+  background-color: var(--primary-color);
+  color: #FEF9EF;
+}
+
+.image1 {
+    width: 700px;
+}
+
+.image2 {
+    width: 500px;
+}
