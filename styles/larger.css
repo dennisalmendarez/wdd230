@@ -19,4 +19,29 @@
         width: 420px;
         grid-row: 2/3;
     }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.stuff {
+		margin: 1rem auto;
+	}
+    footer {
+        align-items: center;
+        justify-content: center;
+        background-color: #23afc8;
+        text-align: center;
+        border-color: #3c93bc;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
