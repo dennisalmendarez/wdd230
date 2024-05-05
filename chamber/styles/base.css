@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Roboto:ital,wght@1,300&display=swap');
+
+:root {
+  --primary-color: #FED9B7;
+  --secondary-color: #0081A7;
+  --accent1-color: #FEEBCA;
+  --accent2-color: #F07167;
+  --accent3-color: #7FCDC2;
+  --heading-font: "Crimson Text";
+  --paragraph-font: "Tenor Sans", serif, Helvetica;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--heading-font), Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--accent3-color);
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+nav a:hover {
+  background-color: var(--accent3-color);
+  color: var(--accent2-color);
+}
+
+nav a {
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  padding: 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#hero-msg h1 {
+  text-align: center;
+}
+
+#hero-msg h4 {
+  text-align: center;
+  color: white;
+}
+
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
+
+#hero {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+main section {
+  text-align: center;
+}
+
+.button-box {
+  text-align: center;
+}
+
+.join {
+  background-color: var(--accent3-color);
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.join:hover {
+  font-size: 20px;
+  background-color: #f0f8ff;
+  color: #0755ba;
+}
+
+#background {
+  height: 725px;
+  background-color: var(--secondary-color);
+  grid-column: 1/11;
+  grid-row: 4/9;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.home-title {
+  font-family: 'Briem Hand', 'Bradley Hand', sans-serif;
+  font-size: 2em;
+  color: white;
+  margin-top: 10px;
+}
+
+.logo {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 80px;
+  border-radius: 100px;
+}
+
+#hero-img {
+  filter: contrast(60%);
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+}
+
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+footer {
+  background-color: var(--accent3-color);
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
