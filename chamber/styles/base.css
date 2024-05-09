@@ -18,12 +18,14 @@ body {
   font-size: 22px;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
   background-color: var(--accent3-color);
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: 1fr 1fr;
 }
 
 nav a:hover {
@@ -50,8 +52,7 @@ nav a:hover {
 }
 
 .navigation {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  align-items: center;
 	display: flex;
 	flex-direction: column;
 	list-style: none;
@@ -61,7 +62,7 @@ nav a:hover {
 
 .navigation a {
 	display: none;
-	padding: 1rem;
+	padding: 0.5rem;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
@@ -103,7 +104,9 @@ nav a:hover {
 }
 
 #hero-msg h1 {
+  padding-top: 100px;
   text-align: center;
+  color: white;
 }
 
 #hero-msg {
@@ -117,6 +120,7 @@ main section {
 }
 
 .home-grid {
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
@@ -144,8 +148,11 @@ main section {
 .home-title {
   font-family: 'Tenor Sans', 'Helvetica', sans-serif;
   font-size: 2em;
-  color: white;
   margin-top: 10px;
+}
+
+#logo-link {
+  max-width: 1px;
 }
 
 .logo {
@@ -167,16 +174,20 @@ h2 {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  display: flex;
+  margin: 20px auto;
+  max-width: 60%;
+  overflow: hidden;
 }
 
 .ea {
+  float: left;
   width: 300px;
   height: 300px;
   border-radius: 50px;
   margin-top: 30px;
   margin-left: 60px;
   margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .spotlights {
@@ -186,17 +197,10 @@ h2 {
   grid-row: 6/7;
 }
 
-#logo_link {
-  padding-top: 5px;
-  justify-self: center;
-  align-self: center;
-}
-
 footer {
   background-color: var(--accent3-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; /* Adjust this property as needed */
-  align-items: center; /* Align items vertically in the center */
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
+  padding-bottom: 40px;
 }
