@@ -7,9 +7,10 @@
     <meta name="description" content="Project WDD230 Chamber">
     <meta name="author" content=" Dennis Almendarez">
     <meta property="og:title" content="Orlando Chamber of Commerce">
-    <meta property="og:type" content="Home Page" />
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="https://dennisalmendarez.github.io/wdd230/chamber/images/orlando.jpeg">
+    <meta property="og:url" content="https://dennisalmendarez.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico">
@@ -18,13 +19,14 @@
     <div id="content">
         <header>
             <a id="logo-link" href="index.html"><img class="logo" src="images/logo.jpg" alt="Home Logo"></a>
-            <nav>
+            <nav class="navigation">
                 <a href="index.html">Home</a>
                 <a href="events.html">Events</a>
                 <a href="join.html">Join</a>
                 <a href="about.html">About us</a>
             </nav>
         </header>
+        <button id="menu"></button>
         <div id="hero">
             <div id="hero-box">
                 <img id="hero-img" src="images/orlando.jpeg" alt="Orlando">
@@ -50,18 +52,22 @@
             <h2>Weather</h2>
             <!-- place for weather and visits -->
         </section>
-        <div id="background"></div>
+        <div id="background">
         <img class="ea" src="images/EA_Sports_Office_2-1650x1098.jpg" alt="EA Sport Company">
         <section class="spotlights">
-            <h1>Orlando's Fast-Growing Game Technology Sector</h1>
+            <h2>Orlando's Fast-Growing Game Technology Sector</h2>
             <p>Behind the scenes of the most visited destination in the world, Orlando's entertainment ecosystem has fostered a 
                 thriving game technology industry. Fueled by the creative minds behind world-class entertainment technology, Orlando ranked No. 1 Metro with the Most STEM Job Growth and No. 4 Best City for Gamers. With year-over-year growth in tech jobs at 149%, a median age of 37, and one of the most unique communities for 
                 independent game developers in the county, Orlando is on the verge of explosive growth in its game technology sector. <a href="https://news.orlando.org/blog/orlandos-fast-growing-game-technology-sector/">Article</a></p>
+            <p><a href="https://www.ea.com/">EA Home Page</a></p>
         </section>
+        </div>
     </main>
     <footer>
-        <p>Contact us at: Company@live.com</p>
+        <p><a href="https://orlando.org/l/contact/">Contact us</a></p>
+        <div>
         <p id="year"></p>
+        </div>
         <p id="lastmodified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
