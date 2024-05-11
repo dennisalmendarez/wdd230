@@ -8,7 +8,7 @@
     <meta name="author" content=" Dennis Almendarez">
     <meta property="og:title" content="Dennis Almendarez WDD 230 - Web Frontend Development">
     <meta property="og:type" content="Home Page">
-    <meta property="og:image" content="https://dennisalmendarez.github.io/wdd230/images/winter-garden.png">
+    <meta property="og:image" content="https://dennisalmendarez.github.io/wdd230/images/winter-garden.webp">
     <meta property="og:url" content="https://dennisalmendarez.github.io/wdd230/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <img src="images/me.jpg" alt="Dennis Almendarez">
+        <img src="images/me.webp" alt="Dennis Almendarez">
         <span>Dennis Almendarez</span>
         <div id="mode">
             🕶️
@@ -31,22 +31,35 @@
         <a href="">Form</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="week03/images/hero-small.webp" media="(max-width: 500px)">
+                <img src="week03/images/hero-medium.webp" alt="Temple" width="1000" height="500">
+            </picture>
+            <div class="hero-label">
+                <p>Temple Of Orlando, Florida</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01:<a href="week01/holygrail.html">Holy Grail</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
-                <li>Week 02:<a href="week02/desing.html">Desing</a> | <a href="https://codepen.io/dennisalmendarez/pen/YzMbxoK">Responsive Menu</a> | <a href="week02/bom.html">Book of Mormon List</a></li>
-                <li>Week 03:<a href="week03/images/landscape.webp">Landscape</a> | <a href="week03/lazyload.html">Lazyload</a> | <a href="week03/responsive-image.html">Responsive Image</a> | <a href="week03/bom.html">BOM LocalStorage</a></li>
-                <li>Week 04:<a href=""></a></li>
-                <li>Week 05:<a href=""></a></li>
-                <li>Week 06:<a href=""></a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <!-- place for weather and visits -->
-        </section>
+        <div class="card-container">
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01:<a href="week01/holygrail.html">Holy Grail</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
+                    <li>Week 02:<a href="week02/desing.html">Desing</a> | <a href="https://codepen.io/dennisalmendarez/pen/YzMbxoK">Responsive Menu</a> | <a href="week02/bom.html">Book of Mormon List</a></li>
+                    <li>Week 03:<a href="week03/images/landscape.webp">Landscape</a> | <a href="week03/lazyload.html">Lazyload</a> | <a href="week03/responsive-image.html">Responsive Image</a> | <a href="week03/bom.html">BOM LocalStorage</a></li>
+                    <li>Week 04:<a href=""></a></li>
+                    <li>Week 05:<a href=""></a></li>
+                    <li>Week 06:<a href=""></a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=6112695&language=en&region=US&timeFormat=HH:mm&windUnit=mph&systemOfMeasurement=imperial&temperatureUnit=fahrenheit" name="CW2" scrolling="no" width="170" height="192" frameborder="0" style="border: 1px solid #10658E;border-radius: 8px"></iframe>
+            </section>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9923.780925044633!2d-81.63971133229614!3d28.43173459240151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7837293f8c4ad%3A0x1ac778dc28a29702!2sWinter%20Garden%2C%20FL%2034787!5e0!3m2!1sen!2sus!4v1715405078727!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p id="year"></p>
@@ -55,5 +68,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

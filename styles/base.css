@@ -39,7 +39,7 @@ header img {
 	border: 0;
 	background: none;
 	color: #000;
-	position: absolute;
+	position: fixed;
 	top: 1rem;
 	right: 1rem;
 }
@@ -110,15 +110,44 @@ nav a:hover {
 h1 {
     font-size: 1.5em;
     text-decoration: underline;
+    text-align: center;
 }
 
 main {
+    margin: 0 auto;
+}
+
+.hero-label {
+	position: absolute;
+	top: 200px;
+	left: 390px;
+	background: radial-gradient(#ffffff70, #0c259222);
+    border-radius: 100px;
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #ffffff65;
+	opacity: 0.75;
+}
+
+.hero-label p {
+	margin: 0;
+	padding: .25rem;
+	font-size: 1.5rem;
+}
+
+.card-container {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    margin-top: 100px;
-    padding: 10px;
+    padding: 50px;
     background-color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .card h2 {
@@ -138,19 +167,27 @@ main {
     border-color: black;
     border-style: solid;
 }
-
+    
 .card ul {
     list-style-type: none;
     padding: 0;
 }
 
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+iframe {
+    width: 100%;;
+}
+
 footer {
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
     background-color: #23afc8;
     text-align: center;
     border-color: #3c93bc;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
