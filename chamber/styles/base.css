@@ -21,7 +21,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+h1 {
+  text-align: center;
+}
 main {
   display: grid;
   max-width: 60%;
