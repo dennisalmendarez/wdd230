@@ -24,11 +24,6 @@
         grid-row: 3/4;
     }
 
-    .hero {
-        width: 100%;
-        height: auto;
-    }
-
     #menu {
 		display: none; /* hide hamburger button */
 	}
