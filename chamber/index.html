@@ -18,10 +18,10 @@
 <body>
     <div id="content">
         <header>
-            <a id="logo-link" href="index.html"><img class="logo" src="images/logo.jpg" alt="Home Logo"></a>
+            <a id="logo-link" href="index.html"><img class="logo" src="images/Logo.webp" alt="Home Logo"></a>
             <nav class="navigation">
                 <a href="index.html">Home</a>
-                <a href="events.html">Events</a>
+                <a href="discovery.html">Discovery</a>
                 <a href="join.html">Join</a>
                 <a href="about.html">About us</a>
             </nav>
@@ -29,7 +29,7 @@
         <button id="menu"></button>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/orlando.jpeg" alt="Orlando">
+                <img id="hero-img" src="images/Orlando.webp" alt="Orlando">
             </div>
             <section id="hero-msg">
                 <h1 class="home-tittle">Orlando Chamber Of Commerce</h1>
@@ -40,18 +40,21 @@
         </div>
     </div>
     <main class="home-grid">
-        <section class="card">
-            <h2>Current Events</h2>
-            <ul>
-                <li>Event:<a href=""></a></li>
-                <li>Event:<a href=""></a></li>
-                <li>Event:<a href=""></a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Weather</h2>
-            <!-- place for weather and visits -->
-        </section>
+        <div class="cards-container">
+            <section class="cards">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Event:<a href=""></a></li>
+                    <li>Event:<a href=""></a></li>
+                    <li>Event:<a href=""></a></li>
+                </ul>
+            </section>
+            <section class="cards">
+                <h2>Information</h2>
+                    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                    <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=6112695&language=en&region=US&timeFormat=HH:mm&windUnit=mph&systemOfMeasurement=imperial&temperatureUnit=fahrenheit" name="CW2" scrolling="no" width="170" height="192" frameborder="0" style="border: 1px solid #10658E;border-radius: 8px"></iframe>
+            </section>
+        </div>
         <div id="background">
         <img class="ea" src="images/EA_Sports_Office_2-1650x1098.jpg" alt="EA Sport Company">
         <section class="spotlights">
@@ -65,6 +68,7 @@
     </main>
     <footer>
         <p><a href="https://orlando.org/l/contact/">Contact us</a></p>
+        <p>WDD230</p>
         <div>
         <p id="year"></p>
         </div>
@@ -72,5 +76,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

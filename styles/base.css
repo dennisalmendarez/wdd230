@@ -135,14 +135,6 @@ main {
 	font-size: 1.5rem;
 }
 
-.card-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    padding: 50px;
-    background-color: white;
-}
-
 .hero {
     display: grid;
     grid-template-rows: 1fr;
@@ -154,6 +146,15 @@ main {
     width: 100%;
     height: auto;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+}
+
 
 .card h2 {
     background-color: #3c93bc;
