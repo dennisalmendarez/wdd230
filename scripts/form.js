@@ -4,6 +4,8 @@ var password = document.getElementById("password")
 function validatePassword(){
   if(password.value != confirm_password.value) {
     confirm_password.setCustomValidity("Passwords Don't Match");
+    password.focus()
+  
   } else {
     confirm_password.setCustomValidity('');
   }
