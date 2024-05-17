@@ -200,4 +200,6 @@ footer {
     text-align: center;
     border-color: #3c93bc;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
