@@ -4,6 +4,10 @@
     --color-on-color: #43746f;
 }
 
+#mode {
+    display: none;
+}
+
 form {
     justify-content: center;
     align-items: center;
