@@ -25,6 +25,22 @@
     transform: scale(1.1);
   }
   
+  .membership {
+    border: 3px solid #0b4f64;
+    border-radius: 5px;
+  }
+
+  form {
+    grid-row: 1/2;
+  }
+
+  .form1 {
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 40px;
+  }
+
   @media screen and (min-width: 1614px) {
     /* side bar */
     .card {

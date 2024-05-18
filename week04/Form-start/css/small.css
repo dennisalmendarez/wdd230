@@ -49,10 +49,6 @@ main {
     min-height: 20rem;
 }
 
-.wf1 input[type="text"] {
-    background-color: deeppink;
-}
-
 /*----------- FORM STYLING -----------*/
 
 .wf1 fieldset {
@@ -120,10 +116,4 @@ main {
 
 .wf1 input:required:valid {
     border-bottom: solid 8px green;
-}
-/*----------- FOOTER --------------*/
-footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
-    text-align: center;
 }

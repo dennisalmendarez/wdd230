@@ -8,6 +8,9 @@
   --accent1-color: #FEEBCA;
   --accent2-color: #F07167;
   --accent3-color: #7FCDC2;
+  --bord1: solid 8px #d81f4ac1;
+  --bord2: solid 8px #5bc95bc9;
+  --color-on-color: #153f6e;
   --heading-font: "Crimson Text";
   --paragraph-font: "Tenor Sans", serif, Helvetica;
 }
@@ -40,7 +43,7 @@ picture {
   animation: fade 15s;
 }
 
-/* use img property for reposibe images */
+/* use img property for responsibe images */
 picture img { 
   max-width: 100%;
   height: auto;
@@ -89,7 +92,7 @@ nav a:hover {
 	padding: 0.5rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: #000000;
 }
 .navigation a:hover {
 	background-color: var(--accent1-color);
@@ -120,14 +123,11 @@ nav a:hover {
 }
 
 footer {
-  width: 100%;
   background-color: var(--accent3-color);
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
+  padding: 10px;
 }
 
 .card {
@@ -294,4 +294,118 @@ h2 {
   padding: 35px;
   grid-column: 6/10;
   grid-row: 6/7;
+}
+
+/* Here starts form page */
+
+form {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+label {
+  width: 90%;
+  display: block;
+  font-weight: 700;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.wf1 fieldset {
+  margin: 2rem 0;
+  border: 5px solid #ff70708a;
+  border-radius: 6px;
+  padding: .5rem 2%;
+}
+
+.wf1 legend {
+  text-align: center;
+  color: var(--color-on-color);
+  padding: 0 .5rem;
+}
+
+.wf1 label {
+  display: block;
+  padding-top: 1rem;
+  font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="tel"] {
+  background-color: #ddd;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.wf1 input[type="submit"] {
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(#f52d00, #ff6846);
+  color: #352a4e;
+  padding: .8rem;
+  width: 100%;
+  outline: none;
+  margin: 1rem auto 2rem auto;
+  box-shadow: 1px 1px 4px #999;
+  display: block;
+}
+
+.wf1 input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.wf1 input:required {
+  border-bottom: var(--bord1);
+}
+
+.wf1 input:required:valid {
+  border-bottom: var(--bord2);
+}
+
+textarea {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  height: 120px;
+}
+
+.form1 {
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  gap: 40px;
+}
+
+.membership {
+  margin-top: 20px;
+  grid-row: 1/2;
+  border: 3px solid #0b4f64;
+  border-radius: 5px;
+}
+
+.foot {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.thanks {
+  padding-top: 200px;
+}
+
+a:visited {
+  color: #000000;
 }
