@@ -304,11 +304,14 @@ form {
 
 
 label {
-  width: 90%;
   display: block;
   font-weight: 700;
-  width: 450px;
+  width: 400px;
   margin: 0 auto;
+  padding-top: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: .9rem;
 }
 
 .wf1 fieldset {
@@ -324,12 +327,6 @@ label {
   padding: 0 .5rem;
 }
 
-.wf1 label {
-  display: block;
-  padding-top: 1rem;
-  font-size: .9rem;
-}
-
 .wf1 input[type="text"],
 .wf1 input[type="email"],
 .wf1 input[type="tel"] {
@@ -338,7 +335,7 @@ label {
   border-radius: 6px;
   padding: .75rem;
   color: #555;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   appearance: none;
 }
@@ -372,7 +369,7 @@ label {
 }
 
 textarea {
-  max-width: 400px;
+  max-width: 380px;
   width: 100%;
   padding: 10px;
   border: 3px solid #ccc;
@@ -392,6 +389,7 @@ textarea {
   grid-row: 1/2;
   border: 3px solid #0b4f64;
   border-radius: 5px;
+  overflow-x: auto;
 }
 
 .foot {
