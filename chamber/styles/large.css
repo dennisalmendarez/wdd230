@@ -34,6 +34,14 @@
     grid-row: 1/2;
   }
 
+  label {
+    width: 450px;
+  }
+
+  textarea {
+    max-width: 425px;
+  }
+
   .form1 {
     align-items: center;
     padding-left: 20%;
