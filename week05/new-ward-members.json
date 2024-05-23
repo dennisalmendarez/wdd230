@@ -1,0 +1,36 @@
+{
+    "familyName" : "Almendarez",
+    "wardMoveInDate" : "04/12/2023",
+    "famMemberNumbers" : 6,
+    "bishopricVisit" : "Yes",
+    "famIndivuals" : [{
+        "name" : "Emyel Almendarez",
+        "gender" : "Male",
+        "birthday" : "12/23/2007"
+    },
+    {
+        "name" : "Dennis Almendarez",
+        "gender" : "Male",
+        "birthday" : "11/21/1996"
+    },
+    {
+        "name" : "Yafedh Almendarez",
+        "gender" : "Male",
+        "birthday" : "05/29/1999"
+    },
+    {
+        "name" : "Acxel Almendarez",
+        "gender" : "Male",
+        "birthday" : "17/05/2002"
+    },
+    {
+        "name" : "Denis Almendarez",
+        "gender" : "Male",
+        "birthday" : "10/09/1979"
+    },
+    {
+        "name" : "Maria Almendarez",
+        "gender" : "Male",
+        "birthday" : "05/29/1979"
+    }]
+}
