@@ -404,3 +404,29 @@ textarea {
 a:visited {
   color: #000000;
 }
+
+/* here stars directory */
+
+.newgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member-card {
+  width: 300px; /* Adjust as needed */
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.member-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.member-card p {
+  margin: 10px 0;
+}

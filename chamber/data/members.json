@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "LYNX",
+        "address": "455 N Garland Avenue, Orlando, Florida",
+        "phone": "407-841-LYNX (5969)",
+        "website": "https://www.golynx.com",
+        "image": "images/lynx.jpg",
+        "membership_level": "Gold",
+        "description": "It's your ride, your way. From local bus service to connections with SunRail, choose the route that's right for you."
+      },
+      {
+        "name": "Electronic Arts Orlando",
+        "address": "515 W Amelia St, Orlando, FL 32801",
+        "phone": "(407) 386-4000",
+        "website": "https://www.ea.com/ea-studios/ea-orlando",
+        "image": "images/EA-Sports-Office.webp",
+        "membership_level": "Silver",
+        "description": "We create extraordinary game experiences for millions of people around the world by bringing together creative, innovative and passionate teams and enabling them to do their best work."
+      },
+      {
+        "name": "SeaWorld® Orlando",
+        "address": "7007 Sea World Dr, Orlando, FL 32821",
+        "phone": "(407) 545-5550",
+        "website": "https://seaworld.com/orlando",
+        "image": "images/seaworld-logo.webp",
+        "membership_level": "Bronze",
+        "description": "Enjoy SeaWorld® Orlando With Thrilling Rides, Animal Tours & More! Purchase Tickets Today. Visit The Best Marine Life Park In Orlando With Interactive Animal Experiences! Visit Now. Thrilling Attractions. Fun For The Whole Family. VIP Upgrades."
+      },
+      {
+        "name": "Tijuana Flats",
+        "address": "1075 Florida Central Pkwy Ste 2900 Longwood, FL 32750",
+        "phone": "(407) 339-2222",
+        "website": "https://www.companyd.com",
+        "image": "images/Tijuana-flats.webp",
+        "membership_level": "Platinum",
+        "description": "Tijuana Flats is always keeping it fresh with the best Tex-Mex! Discover the best taco and Tex-Mex nearby for on-the-go greatness or quick-n-easy delivery."
+      },
+      {
+        "name": "West Orange Cinema",
+        "address": "1575 Maguire Rd, Ocoee, FL 34761",
+        "phone": "(407) 877-3489",
+        "website": "http://www.westorange5.com",
+        "image": "images/West-orange-Cinema.webp",
+        "membership_level": "Gold",
+        "description": "Independently owned family friendly movie theater. Great night out- dinner and a movie."
+      },
+      {
+        "name": "Greenway Kia East",
+        "address": "8701 E Colonial Dr, Orlando, FL 32817",
+        "phone": "(407) 678-1717",
+        "website": "https://www.greenwaykiaeast.com",
+        "image": "images/Greenway-Kia-East.webp",
+        "membership_level": "Silver",
+        "description": "There’s a great Kia dealership that’s ready to help you find your perfect new or used Kia. That would be Greenway Kia East, a model Kia dealership in Orlando that’s ready to find Union Park area drivers the vehicle for them. Among car dealerships in Orlando, we aim to set an example in customer service and selection. Starting the process with our Kia dealership is as easy as coming to Orlando to talk with us!"
+      },
+      {
+        "name": "Victory Martial Arts",
+        "address": "7600 Dr Phillips Blvd, Orlando, FL 32819",
+        "phone": "(407) 903-1133",
+        "website": "https://www.companyg.com",
+        "image": "images/Victory-Martial-Arts.webp",
+        "membership_level": "Bronze",
+        "description": "Since 1993, Victory Martial Arts has been helping people find their personal victory through fitness, family and fun! Born in South America, Grand Master Von Schmeling earned his black belt at the age of 18. At 19 he opened his first of five martial arts schools in Paraguay."
+      }
+    ]
+  }
