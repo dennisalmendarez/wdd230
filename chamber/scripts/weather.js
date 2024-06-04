@@ -8,7 +8,6 @@ const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.749812&lon=6
 
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  forecastList.innerHTML = `${data.main.daily}`
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
   weatherIcon.setAttribute('src', iconsrc);
