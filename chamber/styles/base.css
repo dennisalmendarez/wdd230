@@ -477,3 +477,14 @@ a:visited {
 .member-card p {
   margin: 10px 0;
 }
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.forecast-item {
+  flex: 0 0 calc(33.33% - 10px); /* Adjust the width as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+}
