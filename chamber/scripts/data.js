@@ -1,55 +1,49 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('data/members.json')
-      .then(response => {
-        console.log("Response received:", response);
-        return response.json();
-      })
-      .then(members => {
-        console.log("Members data:", members);
-        const membersDisplay = document.getElementById("members-display");
-  
-        members.members.forEach(member => {
-          // Create a container for each member's data
-          const memberCard = document.createElement("div");
-          memberCard.classList.add("member-card"); // Add the member-card class
-  
+  let isCardView = true; // Initial view is set to card
+  let membersData; // To store fetched members data
+
+  // Function to display members based on current view mode
+  function displayMembers() {
+      const membersDisplay = document.getElementById("members-display");
+      membersDisplay.innerHTML = ''; // Clear previous content
+
+      const memberList = document.createElement("ul");
+      memberList.classList.add("members-list"); // Add the members-list class
+
+      membersData.members.forEach(member => {
+          const memberElement = document.createElement("li");
+          memberElement.classList.add(isCardView ? 'member-card' : 'member-list-item');
+
           // Create HTML elements to display the JSON data
-          const name = document.createElement("p");
-          name.textContent = member.name;
-  
-          const address = document.createElement("p");
-          address.textContent = "Address: " + member.address;
-  
-          const phone = document.createElement("p");
-          phone.textContent = "Phone: " + member.phone;
-  
-          const website = document.createElement("a");
-          website.textContent = "Website";
-          website.href = member.website;
-  
-          const image = document.createElement("img");
-          image.src = member.image;
-          image.alt = "Image of " + member.name;
-  
-          const membership_level = document.createElement("p");
-          membership_level.textContent = "Membership Level: " + member.membership_level;
-  
-          const description = document.createElement("p");
-          description.textContent = member.description;
-  
-          // Append the elements to the member card container
-          memberCard.appendChild(name);
-          memberCard.appendChild(image);
-          memberCard.appendChild(description);
-          memberCard.appendChild(membership_level);
-          memberCard.appendChild(address);
-          memberCard.appendChild(phone);
-          memberCard.appendChild(website);
-  
-          // Append the member card container to the members display
-          membersDisplay.appendChild(memberCard);
-        });
-      })
-      .catch(error => console.error("Error fetching JSON data:", error));
-  });
-  
+          memberElement.innerHTML = `
+              <img src="${member.image}" alt="${member.name}" class="member-image">
+              <h2>${member.name}</h2>
+              <p>${member.address}</p>
+              <p>${member.phone}</p>
+              <p><a href="${member.website}">Website</a></p>
+              <p>${member.description}</p>
+              <p>Membership Level: ${member.membership_level}</p>
+          `;
+
+          memberList.appendChild(memberElement);
+      });
+
+      membersDisplay.appendChild(memberList);
+  }
+
+  // Fetch JSON data and display members
+  fetch('data/members.json')
+    .then(response => response.json())
+    .then(members => {
+      membersData = members; // Store fetched members data
+      displayMembers(); // Display members
+
+      // Toggle view mode on button click
+      const toggleButton = document.getElementById("toggleView");
+      toggleButton.addEventListener("click", function() {
+          isCardView = !isCardView; // Toggle between card and list view
+          displayMembers(); // Redisplay members based on new view mode
+      });
+  })
+  .catch(error => console.error("Error fetching JSON data:", error));
+});
