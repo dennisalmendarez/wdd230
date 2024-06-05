@@ -45,11 +45,9 @@ function displaySpotlightAdvertisements(membersData) {
 document.addEventListener('DOMContentLoaded', function () {
   fetch('data/members.json')
       .then(response => {
-          console.log("Response received:", response);
           return response.json();
       })
       .then(membersData => {
-          console.log("Members Data: ", membersData); // Debugging log
           displaySpotlightAdvertisements(membersData.members);
       })
       .catch(error => console.error("Error fetching JSON data:", error));
