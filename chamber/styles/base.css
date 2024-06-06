@@ -27,7 +27,8 @@ body {
 h1 {
   text-align: center;
 }
-main {
+
+#new-main {
   display: grid;
   max-width: 60%;
   margin: 0 auto;
@@ -464,10 +465,27 @@ a:visited {
 
 /* here stars directory */
 
-.newgrid {
+#members-display {
+  max-width: 400px;
+}
+
+#members-display img {
+  width: 200px;
+}
+
+.members-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center the content */
+}
+
+.newgrid {
+  display: grid;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  margin: 0 auto;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  padding: 20px; /* Add padding as needed */
 }
 
 .member-card {
