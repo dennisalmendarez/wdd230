@@ -13,7 +13,10 @@
   --paragraph-font: "Tenor Sans", serif, Helvetica;
 }
 
+
+
 body {
+  max-width: 400px;
   background-color: var(--primary-color);
   font-family: var(--heading-font), Arial, sans-serif;
   font-size: 18px;
@@ -42,7 +45,7 @@ main {
   margin: 0 auto;
   margin-top: 15px;
   display: block;
-  width: 200px;
+  width: 150px;
   background-color: white;
   text-align: center;
   text-decoration: solid;
@@ -164,6 +167,7 @@ footer {
 }
 
 .cards-container {
+  max-width: 400px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -328,6 +332,7 @@ h2 {
 }
 
 .spotlights {
+  max-width: 400px;
   margin: 20px auto;
   padding: 10px;
   border: 2px solid #000;
@@ -335,10 +340,14 @@ h2 {
   background-color: var(--accent1-color);
 }
 
+.spotlights img {
+  width: 200px;
+}
+
 #spotlight-container{
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 /* Here starts form page */
@@ -463,7 +472,6 @@ a:visited {
 
 .member-card {
   list-style: none;
-  width: 200px;
   margin: 20px;
   padding: 20px;
   border: 2px solid #333;
