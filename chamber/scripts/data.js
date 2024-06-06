@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       membersData.members.forEach(member => {
           const memberElement = document.createElement("li");
-          memberElement.classList.add(isCardView ? 'member-card' : 'member-list-item');
+          memberElement.classList.add(isCardView ? 'member-cards' : 'member-list-item');
 
           // Create HTML elements to display the JSON data
           memberElement.innerHTML = `

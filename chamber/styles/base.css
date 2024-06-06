@@ -465,29 +465,6 @@ a:visited {
 
 /* here stars directory */
 
-#members-display {
-  max-width: 400px;
-}
-
-#members-display img {
-  width: 200px;
-}
-
-.members-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Horizontally center the content */
-}
-
-.newgrid {
-  display: grid;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  margin: 0 auto;
-  max-width: 400px; /* Adjust the maximum width as needed */
-  padding: 20px; /* Add padding as needed */
-}
-
 .member-card {
   list-style: none;
   margin: 20px;
@@ -495,6 +472,33 @@ a:visited {
   border: 2px solid #333;
   border-radius: 10px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.newgrid {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.member-cards {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.member-cards img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
 .member-card img {
