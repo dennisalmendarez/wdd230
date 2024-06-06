@@ -16,7 +16,6 @@
 
 
 body {
-  max-width: 400px;
   background-color: var(--primary-color);
   font-family: var(--heading-font), Arial, sans-serif;
   font-size: 18px;
@@ -37,6 +36,7 @@ main {
 }
 
 #meet-greet-banner {
+  display: none;
   padding: 6px;
   border: 10px solid #6da76d;
   border-radius: 20px;
@@ -347,7 +347,7 @@ h2 {
 #spotlight-container{
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 /* Here starts form page */
